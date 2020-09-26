@@ -2,16 +2,26 @@
     Demo
 ============= */
 
-.box{
-    height: 200px;
-    width: 200px;
-    margin-bottom: 300px;
+.section-1{
+    display: grid;
+    grid-template-areas: ". hello happy .";
+    grid-template-columns: "auto 2fr 1fr auto";
+    background-color: #E6EBFF;
 }
 
-.red-box{
-    background-color: $red;
+#hello-container{
+    grid-area: hello;
+    align-self: center;
+}
+.hello{
+    font-size: 150px;
+    font-family: 'Abril Fatface', cursive;
+    color: #FF4F2D;
 }
 
-.blue-box{
-    background-color: $blue;
+#happy-container{
+    grid-area: happy;
+    align-self: center;
+    color: #FF89FF;
+    font-size: 150px;
 }
